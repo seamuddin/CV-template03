@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Resume Home</title>
+	<title>Welcome To Divine IT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="icon" href="assets/img/icon.png">
+
+	<script>
+/*$(document).ready(function(){
+  $("#hide").click(function(){
+    $("hidemenu").hide();
+  });
+  $("#show").click(function(){
+    $("hidemenu").show();
+  });
+});*/
+
+function show()
+{
+	document.getElementById('hidemenu').style.cssText = 'right : 0%!important';
+}
+function hide()
+{
+  document.getElementById('hidemenu').style.cssText = 'right : -50%';
+}
+</script>
+
 </head>
 <body>
 
 	<!--Header -->
          
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-			  <div class="container">
-			    <a class="navbar-brand" href="#">
-			    	<img src="assets/img/logo1.png" width="170" class="img-fluid">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light p-top-0">
+			  <div class="container-fluid ml-40">
+			    <a class="navbar-brand p-top-0" href="#">
+			    	<img src="assets/img/logo1.png" width="" class="img-fluid img-main">
 			    </a>
-			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+			     
+			   <!--  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			      <span class="navbar-toggler-icon"></span>
-			    </button>
-			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			      <ul class="navbar-nav navbar-nav-home mb-2 mb-lg-0">
-			        <li class="nav-item">
-			          <a class="nav-link active" aria-current="page" href="#">Home</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="#">Link</a>
-			        </li>
-			        <li class="nav-item dropdown">
-			          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-			            Dropdown
+			    </button> -->
+
+			    <!--Menu item -->
+			    <div class=" navbar-collapse navbar-nav-home d-none d-md-block" id="navbarSupportedContent">
+			      <ul class="navbar-nav  mb-2 mb-lg-0 ">
+			        <li class="nav-item dropdown" >
+			           <a class="nav-link dropdown-toggle  p-imp" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            RESUME
 			          </a>
 			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 			            <li><a class="dropdown-item" href="#">Action</a></li>
@@ -36,27 +58,114 @@
 			            <li><a class="dropdown-item" href="#">Something else here</a></li>
 			          </ul>
 			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+
+			        <li class="nav-item dropdown" >
+			           <a class="nav-link dropdown-toggle  p-imp" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            COVER LETTER
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <li><a class="dropdown-item" href="#">Action</a></li>
+			            <li><a class="dropdown-item" href="#">Another action</a></li>
+			            <li><hr class="dropdown-divider"></li>
+			            <li><a class="dropdown-item" href="#">Something else here</a></li>
+			          </ul>
 			        </li>
-			      </ul>
-			      <form class="d-flex mr-2">
+
+			         <li class="nav-item dropdown" >
+			           <a class="nav-link dropdown-toggle  p-imp" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            ABOUT
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <li><a class="dropdown-item" href="#">Action</a></li>
+			            <li><a class="dropdown-item" href="#">Another action</a></li>
+			            <li><hr class="dropdown-divider"></li>
+			            <li><a class="dropdown-item" href="#">Something else here</a></li>
+			          </ul>
+			        </li>
+
+			        <li class="nav-item dropdown" >
+			           <a class="nav-link dropdown-toggle  p-imp" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            CONTACT
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <li><a class="dropdown-item" href="#">Action</a></li>
+			            <li><a class="dropdown-item" href="#">Another action</a></li>
+			            <li><hr class="dropdown-divider"></li>
+			            <li><a class="dropdown-item" href="#">Something else here</a></li>
+			          </ul>
+			        </li>
+
 			        
-			        <button class="btn btn-outline-success" type="submit">Search</button>
-			      </form>
+			       
+			      </ul>
+			      
 			    </div>
+
+			    
+			    <!--Menu item end -->
+
+			      <button class="navbar-toggler-edit btn btn-primary order-3" id="show" onclick="show()"><i class="fas fa-bars"></i> Menu</button>
+
+
+		
+                <div>
+                	
+                </div>
 			  </div>
 </nav>
+
+
+ 
+			      <div class="mobile-nav-menu " id="hidemenu">
+
+			      		<div class="ml-auto-1">
+			   	   			
+			     		 <button class="btn btn-link btn-size" onclick="hide()">
+			      				<i class="far fa-times-circle"></i>
+			     		 </button>
+			      				
+			      	
+			      				
+			      			
+			      				
+			      		</div>
+			      
+			      	    
+			      <ul class="list-group mb-2 mb-lg-0 pt-5 pl-5" id="accordion">
+			       <li class="">
+			           <a class="dropdown-toggle p-imp" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+			            RESUME
+			          </a>
+                     
+                     <div class="collapse" id="multiCollapseExample1">
+                     	<h3>Hi there</h3>
+			         </div>
+
+			         </li>
+			    
+                    
+			         
+
+			        
+
+			        
+			       
+			      </ul>
+
+			      </div>
 
 	<!--Header End -->
 
 
-
+<div class="clear-fix"></div>
+<h2>hello</h2>
 
 
 
 	<!--Script Start -->
 
+         
+         <script src="https://kit.fontawesome.com/c70133c525.js" crossorigin="anonymous"></script>
 
          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
