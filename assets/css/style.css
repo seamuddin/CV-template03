@@ -196,7 +196,7 @@ a{
 
 .slide-content h1 {
     
-    font-size: 45px;
+    font-size: 3rem;
     text-transform: uppercase;
 }
 
@@ -251,6 +251,63 @@ a{
 }
 /*Slider CSS End */
 
+/*Mid Div*/
+.bg-image1
+{
+    background-image: url(../img/13077.jpg);
+    background-size: 100% 100%;
+    background-position: center top;
+    height: 400px;
+
+    padding: 0!important;
+   
+    background-repeat: no-repeat;
+}
+.bg-color1
+{
+    display: flex;
+    align-items: center!important;
+     
+
+}
+.bg-color2
+{
+    background-color: rgba(13, 109, 253, 0.72);
+     background-size: 100% 100%;
+     padding-left: 0px!important;
+     padding-right: 0px!important;
+     height: 100%;
+}
+.icon-01
+{
+    font-size: 30px;
+    color: #0d6efd;
+    background: white;
+    display: inline-block;
+    align-items: center;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 5px rgb(255 255 255 / 30%);
+    box-shadow: 0 0 0 5px rgb(255 255 255 / 30%);
+
+}
+.landing-text h5
+{
+    padding-top: 10px;
+    font-size: .9rem;
+    text-transform: uppercase;
+    line-height: 23px;
+    font-weight: 600;
+}
+.landing-text p
+{
+    font-size: .8rem;
+    line-height: 20px;
+}
+/*Mid Div end*/
+
 /*Template Gallery */
 
         .slide1{
@@ -261,7 +318,13 @@ a{
         {
 
           cursor: pointer;
-          transform: scale(1.3,1.4);
+          transform: scale(1.2,1.2);
+        }
+        .slide1:hover > .btn-template
+        {
+            display: inline-block;
+            transition: all 1s ease;
+            width: 100%;
         }
         .slide1 img
         {
@@ -296,6 +359,36 @@ a{
       align-items: center;
        transition: all 1s ease;
     }
+    .btn-template
+    {
+        position: fixed;
+        top: 40vh;
+        display: none;
+        
+    }
+    .btn-1
+    {
+
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+    }
 /*Template Gallery */
 
 /* Footer CSS Start*/
@@ -321,6 +414,7 @@ a{
      height: 100%;
 
 }
+
 .bg-color h2
 {
   width: 100%;
